@@ -91,7 +91,7 @@ form button {
 }
 
 #done-tasks li {
-    padding: 1rem;
+    padding: 0.9rem;
 }
 #tasks li:last-child, #done-tasks li:last-child {
     
@@ -103,7 +103,6 @@ form button {
 
 #tasks li button {
     margin-right: 10px;
-    color: red;
 }
 
 #tasks li {
@@ -115,8 +114,16 @@ form button {
     text-decoration: line-through;
     color: rgba(86, 142, 126, 1);
     display: flex;
+    align-items: center;
     justify-content: space-between;
     
+}
+
+#todo-list li:hover,
+#done-list li:hover {
+    transform: scale(1.1);
+    transition: 0.4 ease-in-out;
+    background-color: rgb(50, 41, 63);
 }
 
 .icon-button {
